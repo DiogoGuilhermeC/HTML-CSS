@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio do Astronauta</title>
+    <style>
+
+        
+        @font-face {
+            font-family: 'astronauta';
+            src: url('font/Bulletproof.otf') format( 'opentype');
+        }
+
+        :root{
+            --fonte-astronauta: 'astronauta'
+        }
+
+        body {
+            margin: 0px;
+        }
+
+        header {
+            background-image: url('imagens/espaco3.jpg');
+            
+            
+        }
+
+        section > h1 {
+            
+            margin: 0px;
+            padding: 5px;
+            color: white;
+            text-align: center;
+            font-family: var(--fonte-astronauta)
+            
+        }
+
+        #espaço {
+            position: relative;
+            background-image: url('imagens/espaco.jpg');
+            height: 100vh;
+            background-size: cover;
+            
+            
+        }
+
+        #astronauta {
+            background-image: url('imagens/astronauta.png');
+            background-repeat: no-repeat;
+            height: 500px;
+            width: 500px;
+
+            position: absolute;
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);
+
+
+
+        }
+
+
+    </style>
+</head>
+<body>
+   
+    <section id="espaço">
+        <h1> Astronauta </h1>
+        <article id="astronauta">
+
+        </article>
+    </section>
+</body>
+</html>
