@@ -24,27 +24,30 @@
             padding: 10px;
         }
 
+        
 
     </style>
 </head>
 <body>
     <table>
-        <thead style="background-color: gray; color: white;" >
-            <tr>
-                <th rowspan="2">Área</th>
-                <th rowspan="2">Disciplinas</th>
-                <th colspan="2">Notas</th>
-                <th rowspan="2">Média</th>
+    
+
+        <thead  >
+            <tr style="background-color: grey; color: white;">
+                <th rowspan="2" scope="col" >Área</th>
+                <th rowspan="2" scope="colgroup">Disciplinas</th>
+                <th colspan="2" scope="colgroup" >Notas</th>
+                <th rowspan="2" scope="colgroup">Média</th>
             </tr>
-            <tr>
-                <th>Nota 1</th>
-                <th>Nota 2</th>
+            <tr style="background-color: grey ; color: white;">
+                <th scope="colgroup">Nota 1</th>
+                <th scope="colgroup">Nota 2</th>
             </tr>
         </thead>
 
         <tbody>
             <tr>
-                <th rowspan="4">Exatas</th>
+                <th rowspan="4" scope="rowgroup">Exatas</th>
                 <td>Matemática</td>
                 <td>0.0</td>
                 <td>0.0</td>
@@ -72,13 +75,13 @@
                 <td>0.0</td>
             </tr>
 
-            <tr>
-                <th colspan="4" style="background-color: gray; color: white;">Médias de Exatas</th>
+            <tr style="background-color: grey; color: white;">
+                <th colspan="4" scope="row" >Médias de Exatas</th>
                 <td>0.0</td>
             </tr>
 
             <tr>
-                <th rowspan="2">Humanas</th>
+                <th rowspan="2" scope="rowgroup">Humanas</th>
                 <td>História</td>
                 <td>0.0</td>
                 <td>0.0</td>
@@ -92,8 +95,8 @@
                 <td>0.0</td>
             </tr>
 
-            <tr>
-                <th colspan="4">Médias de Humanas</th>
+            <tr style="background-color: grey; color: white;">
+                <th colspan="4" scope="row" >Médias de Humanas</th>
                 <td>0.0</td>
             </tr>
         </tbody>
